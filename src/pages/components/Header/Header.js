@@ -7,7 +7,7 @@ function Header(props) {
     return (
         <div className="header">
             <Logo />
-            <Heading name={list.name}/>
+            <Heading name={list && list.name ? list.name : ''} />
             <ButtonArea />
         </div>
     );
