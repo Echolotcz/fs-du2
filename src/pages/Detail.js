@@ -102,7 +102,7 @@ function Detail() {
         <div className="page">
             <Header list={list} />
             <div className="detail content">
-                <CompletionPieChart chartTitle="Completition" chartSize={chartSize} completedItems={completedItems} totalItems={totalItems} />
+                <CompletionPieChart chartTitle="Completion" chartSize={chartSize} completedItems={completedItems} totalItems={totalItems} />
                 <List list={list} />
             </div>
         </div>
