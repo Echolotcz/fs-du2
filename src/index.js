@@ -5,15 +5,15 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Detail from './pages/Detail';
-import List from './pages/List';
+import ShoppingList from './pages/ShoppingList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<List />} />
-                <Route path="/detail/:id" element={<Detail />} />
+                <Route path="/*" element={<ShoppingList />} />
+                <Route path="/detail/:id/*" element={<Detail />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
